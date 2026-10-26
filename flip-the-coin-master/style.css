@@ -6,8 +6,8 @@
 
 body {
   height: 100vh;
-  font-family: sans-serif;
-  background-color: #5665bd;
+  font-family: "Kanit", sans-serif;
+  background-color: #404a65;
 }
 
 .container {
@@ -19,16 +19,21 @@ body {
 
 .title {
   color: white;
-  -webkit-text-stroke: 1px black;
+
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 25px;
   margin-bottom: 7px;
+  text-shadow:
+    4px 4px 0 #35383f,
+    -4px -4px 0 #35383f,
+    4px -4px 0 #35383f,
+    -4px 4px 0 #35383f;
 }
 
 .descrip {
   color: white;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 15px;
   margin-bottom: 25px;
 }
@@ -55,11 +60,12 @@ body {
 .button {
   margin-top: 5px;
   border: none;
-  background-color: #3d91d1;
+  background-color: #1f6fb0;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   padding: 7px 23px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .author-info {
@@ -75,8 +81,4 @@ body {
 
 .active {
   display: block;
-}
-
-.button {
-  cursor: pointer;
 }
